@@ -4,7 +4,7 @@
   let players = [];
 
   onMount(async () => {
-    const res = await fetch("http://localhost:5000/players");
+    const res = await fetch("http://localhost:8080/players");
     players = await res.json();
   });
 </script>
